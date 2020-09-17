@@ -1,1 +1,5 @@
-<h1>View set-up!</h1>
+<ul>
+  <% @habits.each do |habit| %>
+    <li><%= habit.name %></li>
+  <% end %>
+</ul>
