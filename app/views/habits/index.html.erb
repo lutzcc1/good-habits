@@ -1,5 +1,11 @@
-<ul>
   <% @habits.each do |habit| %>
-    <li><%= habit.name %></li>
+    <div>
+        <h3><%= habit.name %></h3>
+        <h5>Logs</h5>
+        <ul>
+            <% habit.logs.each do |log| %>
+                <li><%= log.day.logs_date %></li>
+            <% end %>
+        </ul>
+    </div>
   <% end %>
-</ul>
