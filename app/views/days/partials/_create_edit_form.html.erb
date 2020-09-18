@@ -1,0 +1,5 @@
+<%= simple_form_for @day do |f| %>
+    <%= f.input :logs_date, required: true, class: "form-control" %>
+    <%= hidden_field_tag 'habit', @habit.id  %>
+    <%= f.button :submit, class: "btn btn-secondary" %>
+<% end %>

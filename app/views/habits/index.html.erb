@@ -1,7 +1,8 @@
   <%= button_tag 'new', class: "btn btn-primary", "data-toggle"=>"modal", "data-target"=>"#newHabitModal", type: "button" %>
   
   <% @habits.each do |habit| %>
-    <div>
+    <%= link_to habit_path(habit) do %>
+      <div>
         <h3><%= habit.name %></h3>
         <h5>Logs</h5>
         <ul>
@@ -9,7 +10,8 @@
                 <li><%= log.day.logs_date %></li>
             <% end %>
         </ul>
-    </div>
+      </div>
+    <% end %>
   <% end %>
 
 <!-- Modal -->
