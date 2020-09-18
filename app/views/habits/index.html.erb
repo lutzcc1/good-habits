@@ -1,18 +1,22 @@
-  <%= button_tag 'new', class: "btn btn-primary", "data-toggle"=>"modal", "data-target"=>"#newHabitModal", type: "button" %>
+<%= button_tag 'habit +', class: "orange-btn", "data-toggle"=>"modal", "data-target"=>"#newHabitModal", type: "button" %>
   
+<div id="habits-container">
   <% @habits.each do |habit| %>
     <%= link_to habit_path(habit) do %>
-      <div>
-        <h3><%= habit.name %></h3>
-        <h5>Logs</h5>
-        <ul>
-            <% habit.logs.each do |log| %>
-                <li><%= log.day.logs_date %></li>
-            <% end %>
-        </ul>
+      <div class="card habit-card">
+        <div class="card-body">
+          <h5 class="card-title"><%= habit.name.capitalize %></h3>
+          <h6 class="card-subtitle">current streak</h5>
+          <ul class="inline-list">
+              <% habit.logs.each do |log| %>
+                  <li></li>
+              <% end %>
+          </ul>
+        </div>
       </div>
     <% end %>
   <% end %>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="newHabitModal" tabindex="-1" role="dialog" aria-labelledby="newHabitModalLabel" aria-hidden="true">

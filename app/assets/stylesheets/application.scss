@@ -16,3 +16,10 @@
  */
 
  @import "bootstrap/scss/bootstrap";
+
+ // custom scss
+ @import "components/navbar";
+
+ body {
+     background-color: lightseagreen;
+ }
