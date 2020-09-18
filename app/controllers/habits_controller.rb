@@ -5,6 +5,7 @@ class HabitsController < ApplicationController
     end
 
     def show
+        @day = Day.new
         @habit = Habit.find(params[:id])
     end
 

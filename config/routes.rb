@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'habits#index'
   post "habits", to: "habits#create"
   get "habits/:id", to: "habits#show", as: :habit
+  post "days", to: "days#create"
 end
