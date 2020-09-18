@@ -1,2 +1,13 @@
 <h3><%= @habit.name %></h3>
 <%= render '/days/partials/create_edit_form' %>
+<div id="log-history">
+    <% log_history = @habit.logs.map {|log| log.day.logs_date } %>
+    <% log_history.sort! {|a, b| b <=> a} %>
+    
+    <% log_history.each do |date| %>
+        <div>
+            <%= date %>
+        </div>
+    <% end %>
+    
+</div>
