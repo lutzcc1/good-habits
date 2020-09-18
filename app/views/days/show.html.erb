@@ -1,9 +1,14 @@
-<h3><%= @day.logs_date %></h3>
-
-<div id="habits-logged">    
-    <% @day.logs.each do |log| %>
-        <div>
-            <%= log.habit.name %>
-        </div>
-    <% end %>
-</div>
+<% if @day %>
+    <h3><%= @day.logs_date %></h3>
+    <%= render "days/partials/date_selector"%>
+    <div id="habits-logged">    
+        <% @day.logs.each do |log| %>
+            <div>
+                <%= log.habit.name %>
+            </div>
+        <% end %>
+    </div>
+<% else %>
+    <h3>No data for the given date</h3>
+    <%= render "days/partials/date_selector"%>
+<% end %>
