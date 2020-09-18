@@ -1,3 +1,5 @@
+  <%= button_tag 'new', class: "btn btn-primary", "data-toggle"=>"modal", "data-target"=>"#newHabitModal", type: "button" %>
+  
   <% @habits.each do |habit| %>
     <div>
         <h3><%= habit.name %></h3>
@@ -9,3 +11,20 @@
         </ul>
     </div>
   <% end %>
+
+<!-- Modal -->
+<div class="modal fade" id="newHabitModal" tabindex="-1" role="dialog" aria-labelledby="newHabitModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New habit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= render "habits/partials/create_edit_form" %>
+      </div>
+    </div>
+  </div>
+</div>
