@@ -1,0 +1,16 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-telos">
+    <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag(image_path "telos-labs.png")  %>
+    <% end %>
+
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <%= link_to "My habits", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+                <%= link_to "Date logs", day_path(Day.last), class: "nav-link" %>
+            </li>
+        </ul>
+    </div>
+</div>
