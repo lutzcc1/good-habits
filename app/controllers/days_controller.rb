@@ -1,4 +1,8 @@
 class DaysController < ApplicationController
+    def show
+        @day = Day.find(params[:id])
+    end
+
     def create
         @habit = Habit.find(params[:habit])
 

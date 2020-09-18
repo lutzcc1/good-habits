@@ -1,0 +1,9 @@
+<h3><%= @day.logs_date %></h3>
+
+<div id="habits-logged">    
+    <% @day.logs.each do |log| %>
+        <div>
+            <%= log.habit.name %>
+        </div>
+    <% end %>
+</div>
