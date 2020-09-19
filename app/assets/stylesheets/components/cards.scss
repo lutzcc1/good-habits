@@ -1,0 +1,14 @@
+.habit-card.card {
+    margin: 16px 0;
+    box-shadow: 3px 2px 8px rgba(0,0,0,0.23);
+    border-style: none;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    &:hover {
+        box-shadow: 3px 2px 24px rgba(0,0,0,0.35);
+    }
+}
+
+.habit-card.big-card.card {
+    padding: 24px;
+}

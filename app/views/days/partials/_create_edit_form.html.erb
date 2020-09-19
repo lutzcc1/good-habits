@@ -1,5 +1,5 @@
-<%= simple_form_for @day do |f| %>
-    <%= f.input :logs_date, required: true, class: "form-control" %>
+<%= simple_form_for @day, wrapper: :inline_form, html: { class: 'form-inline' } do |f| %>
+    <%= f.input :logs_date, label: false, as: :date, html5: true, required: true, class: "form-control" %>
     <%= hidden_field_tag 'habit', @habit.id  %>
-    <%= f.button :submit, class: "btn btn-secondary" %>
+    <%= f.button :submit, "add log", class: "btn orange-btn small-btn" %>
 <% end %>
