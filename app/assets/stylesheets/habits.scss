@@ -9,43 +9,10 @@
     }
 }
 
-.orange-btn.btn {
-    color: white;
-    background-color: #ff804c;
-    border-radius: 43px;
-    box-shadow: 3px 2px 8px rgba(0,0,0,0.23);
-    border: none;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    padding: 16px 24px;
-    margin-top: 24px;
-    transition-duration: 0.5s;
-    &:hover {
-        box-shadow: 3px 2px 24px rgba(0,0,0,0.35);
-        background-color: tomato;
-        color: white;
-    }
-    &:focus {
-        outline: none;
-    }
-}
-
-.orange-btn.small-btn.btn {
-    margin: 0;
-    font-size: 16px;
-    padding: 10px 16px;
-}
-
-.habit-card.card {
-    margin: 16px 0;
-    box-shadow: 3px 2px 8px rgba(0,0,0,0.23);
-    border-style: none;
-    transition-duration: 0.5s;
-    border-radius: 10px;
-    &:hover {
-        box-shadow: 3px 2px 24px rgba(0,0,0,0.35);
-    }
+#log-history {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .inline-list li {

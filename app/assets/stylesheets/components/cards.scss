@@ -12,3 +12,11 @@
 .habit-card.big-card.card {
     padding: 24px;
 }
+
+.small-shadow-card.card-body {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    margin: 8px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px;
+}
