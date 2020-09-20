@@ -1,12 +1,7 @@
 class DaysController < ApplicationController
     def show
         if params[:day].present?
-            date = Date.new(
-                params[:day]["logs_date(1i)"].to_i,
-                params[:day]["logs_date(2i)"].to_i,
-                params[:day]["logs_date(3i)"].to_i
-            )
-            @day = Day.find_by(logs_date: date)
+            @day = Day.find_by(logs_date: params[:day][:logs_date])
         else
             @day = Day.find(params[:id])
         end

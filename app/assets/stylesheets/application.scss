@@ -23,3 +23,16 @@
  body {
      background-color: lightseagreen;
  }
+
+ .log-history > a {
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.log-history {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
