@@ -1,4 +1,4 @@
-<%= simple_form_for Day.new, method: :get, url: :day do |f| %>
-    <%= f.input :logs_date, required: true, class: "form-control" %>
-    <%= f.button :submit, class: "btn btn-secondary" %>
+<%= simple_form_for Day.new, method: :get, url: :day, wrapper: :inline_form, html: { class: 'form-inline' } do |f| %>
+    <%= f.input :logs_date, label: false, as: :date, html5: true, required: true, class: "form-control" %>
+    <%= f.button :submit, "pick date", class: "btn orange-btn small-btn" %>
 <% end %>
