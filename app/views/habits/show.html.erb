@@ -1,13 +1,19 @@
-<h3><%= @habit.name %></h3>
-<%= render '/days/partials/create_edit_form' %>
-<div id="log-history">
-    <% log_history = @habit.logs.map {|log| log.day.logs_date } %>
-    <% log_history.sort! {|a, b| b <=> a} %>
-    
-    <% log_history.each do |date| %>
-        <div>
-            <%= date %>
-        </div>
-    <% end %>
-    
-</div>
+<div class="card habit-card big-card">
+    <h3><%= @habit.name.capitalize %></h3>
+    <%= render '/days/partials/create_edit_form' %>
+    <div id="log-history">
+        <% log_history = @habit.logs.map {|log| log.day } %>
+        <% unless log_history == [] %>
+            <% log_history.sort! {|a, b| b.logs_date <=> a.logs_date} %>
+            <% log_history.each do |day| %>
+                <%= link_to day_path(day) do %>
+                    <div class="card-body small-shadow-card">
+                        <%= day.logs_date.strftime(day.logs_date.year < Time.new.year ? "%b %d, %Y" : "%b %d") %>
+                    </div>
+                <% end %>
+            <% end %>
+        <% else %>
+            <h4>Time to log your first time completing this habit!</h4>
+        <% end %>
+    </div>
+<div>
