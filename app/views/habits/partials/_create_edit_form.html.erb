@@ -1,5 +1,5 @@
 
 <%= simple_form_for @habit do |f| %>
-    <%= f.input :name, required: true, class: "form-control" %>
+    <%= f.input :name, label: false, required: true, class: "form-control" %>
     <%= f.button :submit, "create", class: "orange-btn small-btn" %>
 <% end %>

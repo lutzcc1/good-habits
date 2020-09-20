@@ -9,6 +9,11 @@
     }
 }
 
+.inline-list {
+    padding: 0;
+    line-height: 0;
+}
+
 .inline-list li {
     display: inline;
 }
@@ -22,4 +27,17 @@
 .lightseagreen-modal-header {
     color: white;
     background-color: lightseagreen;
+}
+
+.big-dot {
+    font-size: 60px;
+    font-family: auto;
+}
+
+.green-dot {
+    color: green;
+}
+
+.red-dot {
+    color: red;
 }
