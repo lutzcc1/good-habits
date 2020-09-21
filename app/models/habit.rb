@@ -1,6 +1,7 @@
 class Habit < ApplicationRecord
     has_many :logs
     has_many :days, through: :logs
+    validates :name, uniqueness: true, presence: true
 
     def current_streak
         log_history = self.logs.map {|log| log.day.logs_date }
