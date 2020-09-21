@@ -1,6 +1,7 @@
 <div class="card habit-card big-card">
     <h3><%= @habit.name.capitalize %></h3>
     <%= render '/days/partials/create_edit_form' %>
+    <h5 class="align-self-start mt-3">Completed on:</h5>
     <div class="log-history">
         <% unless @habit.days.length == 0 %>
             <% log_history = @habit.days.sort {|a, b| b.logs_date <=> a.logs_date} %>
@@ -12,7 +13,7 @@
                 <% end %>
             <% end %>
         <% else %>
-            <h4>Time to log your first time completing this habit!</h4>
+            <h5>Time to log your first time completing this habit!</h5>
         <% end %>
     </div>
 <div>

@@ -3,6 +3,7 @@ class Habit < ApplicationRecord
     has_many :days, through: :logs
     validates :name, uniqueness: true, presence: true
 
+    # returns a boolean array with the log info of the last 5 days
     def current_streak
         log_history = self.days.map {|day| day.logs_date }
         log_history.sort! {|a, b| b <=> a }
