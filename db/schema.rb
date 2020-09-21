@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 2020_09_17_194632) do
   end
 
   create_table "logs", force: :cascade do |t|
-    t.integer "habit_id", null: false
-    t.integer "day_id", null: false
+    t.bigint "habit_id", null: false
+    t.bigint "day_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["day_id"], name: "index_logs_on_day_id"
