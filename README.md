@@ -8,7 +8,7 @@ This app enables the Telos Labs team to keep track of good habits and have a rec
 
 * Ruby on Rails v6.0.3.3
 
-* SQLite3
+* PostgreSQL v10.14
 
 * Bootstrap (including jQuery and Popper.js)
 
@@ -32,9 +32,11 @@ If an activity is marked as complete on a date from before the date the activity
 
 I used 3 models for the creation of this app: habit, day and log.
 
-I took this decision so that the app can retrieve information in a bidirectional way. The app can get which dates are attached to a specific activity, meaning which dates were this activity logged. It's also able to get activities logged on any specific day, this way enabling the user to check how productive any given day was. The log model worked as a join table between day and habit.
+I took this decision so that the app can retrieve information in a bidirectional way. The app can get which dates are attached to a specific activity, meaning which dates were this activity logged, and it is also able to get activities logged on any specific day, this way enabling the user to check how productive any given day was. The log model works as a join table between day and habit.
 
-To keep the app simple and to try to stay in line with the 15 hrs time frame, I decided to currently not allow habits to be updated or deleted, the same goes with days, but in a fully-fledged app, the days would automatically be deleted when there were no habits linked to them, without the need of user interaction.
+By doing it this way, adding a new user model in the future becomes simple. All the habits that belong to a certain day can be assigned to that given day, disregarding which user is the actual owner of the habit. Showing the correct habits to the current user would be just a matter of adding an extra layer of filtering to the habits belonging to the selected date.
+
+To keep the app simple and to try to stick to the 15 hrs time frame, I decided to currently not allow habits to be updated or deleted, the same goes with days, but in a fully-fledged app, the days would automatically be deleted when there were no habits linked to them, without the need of user interaction.
 
 I also decided to make use of Bootstrap to create a good looking front end fast, without having to invest so much time in it so that I can focus more on the backend.
 
