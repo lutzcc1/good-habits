@@ -4,7 +4,7 @@ class Habit < ApplicationRecord
     validates :name, uniqueness: true, presence: true
 
     def current_streak
-        log_history = self.logs.map {|log| log.day.logs_date }
+        log_history = self.days.map {|day| day.logs_date }
         log_history.sort! {|a, b| b <=> a }
         log_history = log_history[0..4]
 

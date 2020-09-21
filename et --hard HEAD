@@ -1,0 +1,254 @@
+[33mcommit e5ace3a83d94e0c68adb02ce65880f15e37b0dcb[m[33m ([m[1;36mHEAD -> [m[1;32mgeneral-improvements[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sun Sep 20 22:00:15 2020 -0500
+
+    add model validations
+
+[33mcommit b42ff9b24576e419fd39e3abaadec85ec73e545e[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sun Sep 20 20:51:11 2020 -0500
+
+    set default ActiveRecord timezone
+
+[33mcommit 11b7b7176dad3fe01ab5d7ab6a3569123cc71961[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sun Sep 20 20:19:28 2020 -0500
+
+    update seed
+
+[33mcommit 7edb648eb91922bd69cd628a18934cc204408bf5[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sun Sep 20 20:14:31 2020 -0500
+
+    refactor routes & add days#index
+
+[33mcommit a5d871e8cefedf44ab928508097d2624b043c4c1[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: c2937c6 448ad34
+Author: Luis <lutzcc1@gmail.com>
+Date:   Sun Sep 20 15:25:12 2020 -0500
+
+    Merge pull request #11 from lutzcc1/current-streak
+    
+    add current streak feature
+
+[33mcommit 448ad34993d15ab54464249d1cd0f9cfa176c1fc[m[33m ([m[1;31morigin/current-streak[m[33m, [m[1;32mcurrent-streak[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sun Sep 20 15:23:57 2020 -0500
+
+    add current streak feature
+
+[33mcommit c2937c6b80c2e7ca19351221c2456758eb8673b8[m
+Merge: e9e4448 369405c
+Author: Luis <lutzcc1@gmail.com>
+Date:   Sun Sep 20 12:46:53 2020 -0500
+
+    Merge pull request #10 from lutzcc1/day-show-frontend
+    
+    added style to day#show
+
+[33mcommit 369405c3cec8c248a44500640394d26b5f396c9c[m[33m ([m[1;31morigin/day-show-frontend[m[33m, [m[1;32mday-show-frontend[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sun Sep 20 12:46:12 2020 -0500
+
+    added style to day#show
+
+[33mcommit e9e4448ed1fc2ee045c40489df0545e150c64412[m
+Merge: 314c188 0236f87
+Author: Luis <lutzcc1@gmail.com>
+Date:   Sun Sep 20 12:07:51 2020 -0500
+
+    Merge pull request #9 from lutzcc1/habits-show-frontend
+    
+    Habits show frontend
+
+[33mcommit 0236f87f8d7ee8b3855446e931f0e5839c897725[m[33m ([m[1;31morigin/habits-show-frontend[m[33m, [m[1;32mhabits-show-frontend[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sun Sep 20 12:06:32 2020 -0500
+
+    added style to habits#show
+
+[33mcommit a1155c433a7bfd5b1c9f14ffc38a0119142dd227[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sat Sep 19 12:28:18 2020 -0500
+
+    add style to log history
+
+[33mcommit a6d48a0ee145561e3c08e952765ec74fe3e0e602[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Sat Sep 19 11:52:58 2020 -0500
+
+    add style to date picker
+
+[33mcommit 314c1880096150c6fe8d0bc603b01b6cc07d5cb7[m
+Merge: 76099d6 c1302f3
+Author: Luis <lutzcc1@gmail.com>
+Date:   Sat Sep 19 11:28:51 2020 -0500
+
+    Merge pull request #8 from lutzcc1/habits-index-frontend
+    
+    Habits index frontend
+
+[33mcommit c1302f3f55780d1052d83a8ee81601bd8f044f0e[m[33m ([m[1;31morigin/habits-index-frontend[m[33m, [m[1;32mhabits-index-frontend[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 21:26:06 2020 -0500
+
+    add style to habit creation modal
+
+[33mcommit caa88ff4504c6a0de2577f172fb8ba84ba924b83[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 18:58:09 2020 -0500
+
+    habit's index now is well styled
+
+[33mcommit 76099d6f4c20a49bb0feff52be0b83c7c6994193[m
+Merge: ac3d730 a1b137d
+Author: Luis <lutzcc1@gmail.com>
+Date:   Fri Sep 18 17:35:26 2020 -0500
+
+    Merge pull request #7 from lutzcc1/navbar
+    
+    navbar added
+
+[33mcommit a1b137d70f976107a8fb189bdae947fc69c41582[m[33m ([m[1;31morigin/navbar[m[33m, [m[1;32mnavbar[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 17:34:18 2020 -0500
+
+    navbar added
+
+[33mcommit ac3d7307247d3b6feae3a6f2383180cb4352027e[m
+Merge: e38a564 db39e3a
+Author: Luis <lutzcc1@gmail.com>
+Date:   Fri Sep 18 16:59:28 2020 -0500
+
+    Merge pull request #6 from lutzcc1/habits-logged-per-day
+    
+    add date selector partial
+
+[33mcommit db39e3a30d38bbdf13a5b787916d99963f950786[m[33m ([m[1;31morigin/habits-logged-per-day[m[33m, [m[1;32mhabits-logged-per-day[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 16:57:54 2020 -0500
+
+    add date selector partial
+
+[33mcommit e38a5648b62ed15de0ded5658d073b7c1c6c4278[m
+Merge: 517af2d 93e9001
+Author: Luis <lutzcc1@gmail.com>
+Date:   Fri Sep 18 16:57:01 2020 -0500
+
+    Merge pull request #5 from lutzcc1/habits-logged-per-day
+    
+    habits completed each day are now displayed
+
+[33mcommit 93e90012202d226956cee2bda3ea3f1b5aafd316[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 14:39:05 2020 -0500
+
+    habits completed each day are now displayed
+
+[33mcommit 517af2dda4159341c3f265c9a4b37050d2d4d58e[m
+Merge: b6bcd3b 7dd66e9
+Author: Luis <lutzcc1@gmail.com>
+Date:   Fri Sep 18 14:30:51 2020 -0500
+
+    Merge pull request #4 from lutzcc1/show-habits-log-history
+    
+    habit log history is visible now
+
+[33mcommit 7dd66e9d80c4c844995a81422056f00368c5f410[m[33m ([m[1;31morigin/show-habits-log-history[m[33m, [m[1;32mshow-habits-log-history[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 14:30:10 2020 -0500
+
+    habit log history is visible now
+
+[33mcommit b6bcd3bfd969ed78cfb5985bb9e1d27d589fdc1b[m
+Merge: a8b3bcf 0ab9893
+Author: Luis <lutzcc1@gmail.com>
+Date:   Fri Sep 18 14:01:43 2020 -0500
+
+    Merge pull request #3 from lutzcc1/log-habits
+    
+    Log habits
+
+[33mcommit 0ab9893523c4a6cf8ecf26cd207c9c352d53bafc[m[33m ([m[1;31morigin/log-habits[m[33m, [m[1;32mlog-habits[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 13:43:26 2020 -0500
+
+    updated seed and added logs uniqueness validator
+
+[33mcommit d0e58a98bc51193f881cc2abcae06b53368667d9[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 12:48:20 2020 -0500
+
+    dates creation is now working
+
+[33mcommit 6e8037fada0eda7f462569d001449e42cad7ad5b[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Fri Sep 18 11:20:53 2020 -0500
+
+    added habit#show
+
+[33mcommit a8b3bcfa7a0a19d6c1dfffd18825323857ddeb93[m
+Merge: 655f647 2362ecc
+Author: Luis <lutzcc1@gmail.com>
+Date:   Thu Sep 17 23:10:46 2020 -0500
+
+    Merge pull request #2 from lutzcc1/create-habits
+    
+    Create habits
+
+[33mcommit 2362ecc0ec61de0a0455458d0ff75ced37572b9d[m[33m ([m[1;31morigin/create-habits[m[33m, [m[1;32mcreate-habits[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Thu Sep 17 23:08:46 2020 -0500
+
+    create habits working
+
+[33mcommit d9ce0bb9fd48cf9dbe0b6c0f24fbe6928b05e7b5[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Thu Sep 17 22:26:01 2020 -0500
+
+    add Bootstrap, jQuery & Popper.js
+
+[33mcommit 655f64759b377936a5818eb78c2f2173d835ec0a[m
+Merge: 69ad0cf d64115a
+Author: Luis <lutzcc1@gmail.com>
+Date:   Thu Sep 17 15:17:58 2020 -0500
+
+    Merge pull request #1 from lutzcc1/setup-index-view
+    
+    Setup index view
+
+[33mcommit d64115aeb07a8a8f06195293a022a754ff5199a0[m[33m ([m[1;31morigin/setup-index-view[m[33m, [m[1;32msetup-index-view[m[33m)[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Thu Sep 17 15:16:49 2020 -0500
+
+    index view, seed & asociations working
+
+[33mcommit b1ade79b4f9d2effd22116b27439bcac9154e895[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Thu Sep 17 14:57:04 2020 -0500
+
+    created seed
+
+[33mcommit 7642c30d79ed856b10f85b9b311b16503f815f18[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Thu Sep 17 13:22:25 2020 -0500
+
+    run migrations
+
+[33mcommit d81417dae40c826009fccde4173fff52a3c7b5fa[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Thu Sep 17 13:20:04 2020 -0500
+
+    generate models & setup relationships
+
+[33mcommit e2baf2024c99afc5cd72ae94f907f1cd402af549[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Thu Sep 17 12:39:36 2020 -0500
+
+    setup controllers & view
+
+[33mcommit 69ad0cf63a54b793264c546633e0592af3100847[m
+Author: Luis Cesar <lutzcc1@gmail.com>
+Date:   Thu Sep 17 12:17:57 2020 -0500
+
+    rails app good-habits
