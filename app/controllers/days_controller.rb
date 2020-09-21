@@ -1,4 +1,7 @@
 class DaysController < ApplicationController
+    def index
+    end
+    
     def show
         if params[:day].present?
             @day = Day.find_by(logs_date: params[:day][:logs_date])
