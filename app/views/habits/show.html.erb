@@ -2,9 +2,8 @@
     <h3><%= @habit.name.capitalize %></h3>
     <%= render '/days/partials/create_edit_form' %>
     <div class="log-history">
-        <% log_history = @habit.logs.map {|log| log.day } %>
-        <% unless log_history == [] %>
-            <% log_history.sort! {|a, b| b.logs_date <=> a.logs_date} %>
+        <% unless @habit.days.length == 0 %>
+            <% log_history = @habit.days.sort {|a, b| b.logs_date <=> a.logs_date} %>
             <% log_history.each do |day| %>
                 <%= link_to day_path(day) do %>
                     <div class="card-body small-shadow-card">

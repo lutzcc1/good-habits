@@ -11,10 +11,14 @@ class HabitsController < ApplicationController
 
     def create
         @habit = Habit.new(habit_params)
-        @habit.save
-        
-        redirect_to root_path
+        if @habit.save
+            redirect_to habit_path(@habit)
+        else
+            redirect_to root_path
+        end
     end
+
+    private
 
     def habit_params
         params.require(:habit).permit(:name)

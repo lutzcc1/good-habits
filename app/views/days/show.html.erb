@@ -1,18 +1,18 @@
 
 <div class="card habit-card big-card">
     <% if @day %>
-    <h3>Habits logged on <%= @day.logs_date.strftime(@day.logs_date.year < Time.new.year ? "%b %d from %Y" : "%b %d") %></h3>
-    <div class="d-flex">
-    <%= render "days/partials/date_selector"%>
-    <div class="log-history ml-5">   
-        <% @day.logs.each do |log| %>
-            <%= link_to habit_path(log.habit) do %>
-                <div class="card-body small-shadow-card">
-                    <%= log.habit.name %>
-                </div>
+        <h3>Habits logged on <%= @day.logs_date.strftime(@day.logs_date.year < Time.new.year ? "%b %d from %Y" : "%b %d") %></h3>
+        <div class="d-flex">
+        <%= render "days/partials/date_selector"%>
+        <div class="log-history ml-5">  
+            <% @day.habits.each do |habit| %>
+                <%= link_to habit_path(habit) do %>
+                    <div class="card-body small-shadow-card">
+                        <%= habit.name.downcase %>
+                    </div>
+                <% end %>
             <% end %>
-        <% end %>
-    </div>
+        </div>
     <% else %>
         <h3>No data for the given date</h3>
         <%= render "days/partials/date_selector"%>
